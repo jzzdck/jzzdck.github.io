@@ -1,12 +1,13 @@
-.header {
-	padding: 80px;
-	text-align: center;
-	background: #1abc9c;
-	color: white;
+Body {
+	font-family: 'Iosevka Web';
 }
 
-.hedaer h1 {
-	font-size: 40px;
+.header {
+	padding: 120px;
+	text-align: center;
+	background: #333;
+	color: white;
+	font-family: 'Iosevka Web';
 }
 
 /* Style the top navigation bar */
