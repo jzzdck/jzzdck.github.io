@@ -101,10 +101,3 @@ body {
 	color: #333;
 }
 
-.visibledevice {display:none;}
-.visibledesktop {display:display;}
-
-@media (max-width : 320px) {
-    .visibledevice {display:block;}
-    .visibledesktop {display:none;}
-}
