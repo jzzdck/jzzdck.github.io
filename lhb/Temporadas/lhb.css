@@ -64,10 +64,10 @@ body {
 
 @media (max-width :320px) {
 	.sidebar ul li a .text{
-		 margin-left: 5px;
+		 margin-left: 0px;
 		 color: #fff;
-		 font-size: 9px;
-		 letter-spacing: 2px;
+		 font-size: 0px;
+		 letter-spacing: 0px;
 	}
 }
 
