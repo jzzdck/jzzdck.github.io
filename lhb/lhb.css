@@ -1,3 +1,7 @@
+body {
+ background: #f5f5f5;
+}
+
 * {
 	font-family: 'Iosevka Web';
 	margin: 0;
@@ -58,6 +62,15 @@
  letter-spacing: 2px;
 }
 
+@media screen and (max-width: 480px) {
+	.sidebar ul li a .text{
+		 margin-left: 0px;
+		 color: #fff;
+		 font-size: 0px;
+		 letter-spacing: 0px;
+	}
+}
+
 .sidebar ul li a:hover{
  background: #0e94d4;
  color: #fff;
@@ -75,9 +88,41 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 3px solid #333000
+	border-bottom: 3px solid #333;
 }
 
-body {
- background: #f5f5f5;
+.boton {
+	position: fixed;
+	left: calc(17% + 41.5% - 150px);
+	bottom: 3%;
+	height: 10%;
+	width: 300px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton:hover {
+	background: #ccc;
+}
+
+.we {
+	color: #333;
+}
+
+img{
+	height: auto;
+	max-width:100%;
+}
+
+.cards {
+	position:fixed;
+	left: calc(17% + 41.5% - 140px);
+	top: 23%; 
+	width: 280px;
+	padding:30px;
+}
+
+.cards:hover {
+	background: #ccc;
 }

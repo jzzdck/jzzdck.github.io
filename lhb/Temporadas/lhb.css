@@ -62,7 +62,7 @@ body {
  letter-spacing: 2px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	.sidebar ul li a .text{
 		 margin-left: 0px;
 		 color: #fff;
@@ -110,3 +110,19 @@ body {
 	color: #333;
 }
 
+img{
+	height: auto;
+	max-width:100%;
+}
+
+.cards {
+	position:fixed;
+	left: calc(17% + 41.5% - 140px);
+	top: 23%; 
+	width: 280px;
+	padding:30px;
+}
+
+.cards:hover {
+	background: #ccc;
+}
