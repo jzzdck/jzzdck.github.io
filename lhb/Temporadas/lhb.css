@@ -62,7 +62,7 @@ body {
  letter-spacing: 2px;
 }
 
-@media (max-width :320px) {
+@media (max-width: 480px) {
 	.sidebar ul li a .text{
 		 margin-left: 0px;
 		 color: #fff;
