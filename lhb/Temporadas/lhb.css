@@ -117,10 +117,13 @@ img{
 
 .cards {
 	position:fixed;
-	left: calc(17% + 41.5% - 140px);
+	left: calc(17% + 41.5% - 10.5%);
 	top: 23%; 
-	width: 280px;
-	padding:30px;
+	width: 21%;
+	padding: 3%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 
 .cards:hover {
