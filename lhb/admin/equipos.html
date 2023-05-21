@@ -4,6 +4,7 @@
 		<title>LHB</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="generarEquipo.js"></script>
 		<link rel="stylesheet" href="lhb.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="stylesheet">
@@ -32,8 +33,8 @@
 						<input type="text" id="escudo" name="escudo">
 					</div>
 					<div class="item">
-						<label for="descripcion">Lema:</label>
-						<input type="text" id="descripcion" name="descripcion">
+						<label for="lema">Lema:</label>
+						<input type="text" id="lema" name="lema">
 					</div>
 				</div>
 			</div>
@@ -42,21 +43,21 @@
 			<div class="simple_header">
 				<h1>JUGADORES</h1>
 			</div>
-
+			<p id="Jugador_list"></p>
+			
 			<div class="item">
-				<label for="nick">Nick del jugador:</label>
-				<input type="text" id="nick" name="nick">
+				<label for="jug">Nick del jugador:</label>
+				<input type="text" id="Jugador" name="jug">
 			</div>
 			<div class="item">
-			<button class="boton" width="90%">Agregar</button>
+			<button class="boton" onclick="agregar('Jugador',jugs,calcularExtra('Jugador'))">Agregar</button>
 			</div>
 			<div class="item">
-			<button class="boton">Eliminar</button>
+			<button class="boton" onclick="eliminar('Jugador',jugs)">Eliminar</button>
 			</div>
 			<div class="item">
 				<label><input type="radio" id="cap" value="cap" name="cual"> Capitan </label> <br>
-
-			<label><input type="radio" id="subcap" value="subcap" name="cual"> Sub Capitan</label> <br>
+				<label><input type="radio" id="subcap" value="subcap" name="cual"> Sub Capitan</label> <br>
 			</div>
 		</div>
 
@@ -65,22 +66,24 @@
 				<h1>CAMISETAS</h1>
 			</div>
 
+			<p id="Camiseta_list"></p>
+
 			<div class="item">
-					<label for="nick">Camiseta (comando en hax):</label>
-					<input type="text" id="nick" name="nick">
+					<label for="cami">Camiseta (comando):</label>
+					<input type="text" id="Camiseta" name="cami">
 				</div>
 
 				<div class="item">
-				<button class="boton">Agregar</button>
+				<button class="boton" onclick="agregar('Camiseta',camis,calcularExtra('Camiseta'))">Agregar</button>
 				</div>
 				<div class="item">
-				<button class="boton">Eliminar</button>
+				<button class="boton" onclick="eliminar('Camiseta',camis)">Eliminar</button>
 				</div>
 				<div class="item">
 					<label><input type="radio" id="titular" value="tit" name="cami"> Titular </label> <br>
-
-				<label><input type="radio" id="alternativa" value="alt" name="cami"> Alternativa</label> <br>
+					<label><input type="radio" id="alternativa" value="alt" name="cami"> Alternativa</label> <br>
 				</div>
+			</div>
 		</div>
 	</body>
 </html>	
