@@ -93,15 +93,13 @@ body {
 
 .simple_header {
 	padding: 1%;
-	left:30%;
-	top:40%;
 }
 
 .box {
 	padding: 3%;
 	display:flex;
 	left: 40%;
-	top: 40%;
+	top: 30%;
 	width: 40%;
 	height: 50%;
 	flex-direction:column;
@@ -109,8 +107,9 @@ body {
 }
 
 .boton {
-	height: 30%;
-	width: 70%;
+	height: 40%;
+	margin-left:3%;
+	width: 50%;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -146,10 +145,9 @@ img{
 }
 
 .dropdown {
-	width:40%;
+	color: #333;
 	top: 20%;
 	left: 10%;
-	font-size: 20px;
 	display: flex;
 	flex-direction:row;
 	flex-wrap: wrap;

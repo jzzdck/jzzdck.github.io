@@ -2,6 +2,7 @@
 <html lang="es">
 	<head>
 		<title>LHB</title>
+		<script src="generarPartido.js"></script>
 		<link rel="stylesheet" href="lhb.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="stylesheet">
@@ -11,35 +12,44 @@
 			<div class="logo">LHB ADM</div>
 		</div>
 		<div class="simple_header">
+			<h1>GOLES</h1>
+			<p id="lista_goles" style="white-space:pre-line"></p>
+		</div>
+		<div class="simple_header">
 			<h1>SELECCIONAR EQUIPOS</h1>
 		</div>
-		<div class="dropdown">
+		<div class="dropdown" style="width:80%">
 			<div class="item">
 			<label for="local">Equipo Local: </label>
 			<select name="local" id="local">
-				<option value="value1">rK</option>
-				<option value="value2">BFC</option>
-				<option value="value3">AFK</option>
-				<option value="value4">OVJ</option>
-				<option value="value5">BDM</option>
-				<option value="value6">KFC</option>
-				<option value="value7">VP</option>
-				<option value="value8">ISC</option>
+				<option value="rK">rK</option>
+				<option value="BFC">BFC</option>
+				<option value="AFK">AFK</option>
+				<option value="OVJ">OVJ</option>
+				<option value="BDM">BDM</option>
+				<option value="KFC">KFC</option>
+				<option value="VP">VP</option>
+				<option value="ISC">ISC</option>
 			</select>
 			</div>
 
 			<div class="item">
-			<label for="local">Equipo Visitante: </label>
-			<select name="local" id="local">
-				<option value="value1">rK</option>
-				<option value="value2">BFC</option>
-				<option value="value3">AFK</option>
-				<option value="value4">OVJ</option>
-				<option value="value5">BDM</option>
-				<option value="value6">KFC</option>
-				<option value="value7">VP</option>
-				<option value="value8">ISC</option>
+			<label for="visitante">Equipo Visitante: </label>
+			<select name="visitante" id="visitante">
+				<option value="rK">rK</option>
+				<option value="BFC">BFC</option>
+				<option value="AFK">AFK</option>
+				<option value="OVJ">OVJ</option>
+				<option value="BDM">BDM</option>
+				<option value="KFC">KFC</option>
+				<option value="VP">VP</option>
+				<option value="ISC">ISC</option>
 			</select>
+			</div>
+
+			<div class="item">
+			<label for="fecha">Fecha: </label>
+			<input type="number" style="width:30%"id="fecha" value="1" name="fecha" min="1">
 			</div>
 		</div>
 
@@ -47,29 +57,35 @@
 			<h1>NUEVO GOL</h1>
 		</div>
 
-		<div class="dropdown">
+		<div class="dropdown" style="width:40%">
 			<div class="item">
 			<label for="name">Tiempo (en m:ss):</label>
-			<input type="text" id="name" name="name">
+			<input type="text" id="tiempo" name="name">
 			</div>
 			<div class="item">
 			<label for="name">Quien hizo el gol:</label>
-			<input type="text" id="name" name="name">
+			<input type="text" id="goleador" name="name">
 			</div>
 			<div class="item">
 			<label for="name">Asis (dejar vacio si no hay):</label>
-			<input type="text" id="name" name="name">
+			<input type="text" id="asistidor" name="name">
 			</div>
 			<div class="item">
-				<label><input type="checkbox" id="cbox1" value="first_checkbox"> En contra</label><br>
+				<label><input type="checkbox" id="en_contra" value="si"> En contra</label><br>
 			</div>
 			<div class="item">
-				<label><input type="radio" id="rad1" value="local" name="cual"> Del local </label> <br>
+				<label><input type="radio" id="check_loc" value="local" name="cual"> Del local </label> <br>
 			</div>
 			<div class="item">
-				<label><input type="radio" id="rad1" value="visitante" name="cual"> Del visitante </label> <br>
+				<label><input type="radio" id="check_vis" value="visitante" name="cual"> Del visitante </label> <br>
 			</div>
 		</div>
 
+		<div class="dropdown" style="width:40%">
+			<button class="boton" onclick="agregarGol()">Agregar Gol</button>
+			<button class="boton" onclick="eliminarUltimoGol()">Eliminar Ultimo Gol</button>
+			<button class="boton" onclick="nuevoPartido()">Nuevo Partido</button>
+			<button class="boton" onclick="guardarPartido()">Guardar Partido</button>
+		</div>
 	</body>
 </html>	
