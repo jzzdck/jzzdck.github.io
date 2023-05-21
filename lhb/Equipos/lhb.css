@@ -1,0 +1,149 @@
+body {
+ background: #f5f5f5;
+}
+
+* {
+	font-family: 'Iosevka Web';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+.top_navbar{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 8%;
+ background: #323233;
+ box-shadow: 1px 0 2px rgba(0,0,0,0.125);
+ display: flex;
+ align-items: center;
+}
+
+.top_navbar .logo{
+ width: 250px;
+ font-size: 25px;
+ font-weight: 700;
+ padding: 0 25px;
+ color: white;
+ letter-spacing: 10px;
+ text-transform: uppercase;
+}
+
+.sidebar{
+ position: fixed;
+ top: 9%;
+ left: 0;
+ width: 17%;
+ height: 90%;
+ background: #323233;
+}
+
+.sidebar ul li a{
+ display: block;
+ padding: 16px 25px;
+ border-bottom: 1px solid #535353;
+ color: #323233;
+}
+
+.sidebar ul li a .icon{
+ font-size: 18px;
+ color: white;
+ vertical-align: middle;
+}
+
+.sidebar ul li a .text{
+ margin-left: 10px;
+ color: #fff;
+ font-size: 18px;
+ letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+	.sidebar ul li a .text{
+		 margin-left: 0px;
+		 color: #fff;
+		 font-size: 0px;
+		 letter-spacing: 0px;
+	}
+}
+
+.sidebar ul li a:hover{
+ background: #0e94d4;
+ color: #fff;
+}
+
+.header {
+	position: fixed;
+	left: 17%;
+	letter-spacing: 10px;
+	top: 8%;
+	width: calc(100% - 21%);
+	height: calc(20% - 8%);
+	margin-left:2%;
+	font-size: 43px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid #333;
+}
+
+.boton {
+	position: fixed;
+	left: calc(17% + 41.5% - 150px);
+	bottom: 3%;
+	height: 10%;
+	width: 300px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boton:hover {
+	background: #ccc;
+}
+
+.we {
+	color: #333;
+}
+
+img{
+	height: auto;
+	max-width:100%;
+}
+
+.cards {
+	position:fixed;
+	left: 20%;
+	top: 23%;
+	height:76%;
+	width: 77%;
+	box-sizing: border-box;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	flex-basis:100%;
+	overflow-y:scroll;
+}
+
+.items {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	margin:5%;
+	padding:3%;
+	height:auto;
+	width:25%;
+}
+
+.items:hover {
+	background: #ccc;
+}
+
+
+
