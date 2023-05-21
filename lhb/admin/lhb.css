@@ -12,11 +12,11 @@ body {
 }
 
 .top_navbar{
- position: fixed;
  top: 0;
  left: 0;
  width: 100%;
  height: 8%;
+ padding:1%;
  background: #323233;
  box-shadow: 1px 0 2px rgba(0,0,0,0.125);
  display: flex;
@@ -91,23 +91,38 @@ body {
 	border-bottom: 3px solid #333;
 }
 
-.boton {
-	position: fixed;
-	left: calc(17% + 41.5% - 150px);
-	bottom: 3%;
-	height: 10%;
-	width: 300px;
+.simple_header {
+	padding: 1%;
+	left:30%;
+	top:40%;
+}
+
+.box {
+	padding: 3%;
 	display:flex;
-	justify-content: center;
-	align-items: center;
+	left: 40%;
+	top: 40%;
+	width: 40%;
+	height: 50%;
+	flex-direction:column;
+	color: #333;
+}
+
+.boton {
+	height: 30%;
+	width: 70%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 
 .boton:hover {
 	background: #ccc;
 }
 
-.we {
+.boxstyle {
 	color: #333;
+	font-size: 33px;
 }
 
 img{
@@ -128,4 +143,18 @@ img{
 
 .cards:hover {
 	background: #ccc;
+}
+
+.dropdown {
+	width:40%;
+	top: 20%;
+	left: 10%;
+	font-size: 20px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.item {
+	padding: 3%;
 }
