@@ -112,6 +112,7 @@ function validar() {
 		palmares: {},
 		pj: 0,
 		pg: 0,
+		pp: 0,
 		gf: 0,
 		gc: 0
 	};

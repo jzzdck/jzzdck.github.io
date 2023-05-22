@@ -79,12 +79,12 @@ body {
 .header {
 	position: fixed;
 	left: 17%;
-	letter-spacing: 10px;
+	letter-spacing: 1vw;
 	top: 8%;
 	width: calc(100% - 21%);
 	height: calc(20% - 8%);
 	margin-left:2%;
-	font-size: 43px;
+	font-size: 3vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -145,5 +145,53 @@ img{
 	background: #ccc;
 }
 
+.teamcard {
+	position:fixed;
+	left: 20%;
+	top: 17%;
+	height:81%;
+	width: 77%;
+	display:flex;
+}
 
+.teamdata{
+	width:60%;
+	margin-top:7%;
+	margin-left:3%;
+	overflow-y:scroll;
+}
+
+.teamname {
+	font-size:1.5vw;
+	letter-spacing:5px;
+	text-align:center;
+	padding:3%;
+}
+
+.simple_header {
+	padding: 1%;
+	font-size:25px;
+}
+
+table {
+	width:100%;
+}
+
+tr {
+	text-align:left;
+}
+
+th,td {
+	font-weight: 300;
+	padding:3%;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+
+tr:hover {
+	background-color:#D6EEEE;
+}
 
